@@ -53,7 +53,7 @@ export default function ProjectShowcase() {
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
           Our Projects
         </h2>
-        <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto font-medium">
+        <p className="mt-4 text-lg max-w-2xl mx-auto font-medium bg-gradient-to-r from-purple-500 via-pink-500 to-red-400 bg-clip-text text-transparent">
           Explore our portfolio of innovative solutions, crafted for impact and excellence. Each project reflects our commitment to creativity, technology, and client success.
         </p>
       </div>

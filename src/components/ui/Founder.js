@@ -1,7 +1,9 @@
 // components/Founder.tsx
 "use client";
+
 import Image from "next/image";
 import founders from "@/data/objects/Founders";
+
 export default function Founder() {
     return (
         <section
@@ -44,7 +46,7 @@ export default function Founder() {
                         <h3 className={styles.founderName}>{founder.name}</h3>
                         <p className={styles.founderRole}>{founder.role}</p>
                             {/* Visible badge for demonstration */}
-                            <span style={{display:'inline-block',marginTop:'8px',padding:'4px 12px',background:'linear-gradient(90deg,#2563eb,#7c3aed,#e11d48,#14b8a6)',color:'#fff',borderRadius:'999px',fontSize:'0.85rem',fontWeight:'bold',letterSpacing:'0.5px'}}>Verified Founder</span>
+                            <span style={{display:'inline-block',marginTop:'8px',padding:'4px 12px',background:'linear-gradient(90deg,#1e293b,#64748b,#e2e8f0)',color:'#1e293b',borderRadius:'999px',fontSize:'0.85rem',fontWeight:'bold',letterSpacing:'0.5px'}}>Verified Founder</span>
                         {/* Underline animation */}
                         <div className={styles.underline}></div>
                     </div>

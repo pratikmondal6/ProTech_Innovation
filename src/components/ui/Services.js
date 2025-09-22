@@ -17,7 +17,7 @@ export default function TechnologySolutions() {
       <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-bold mb-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center">
         Driving Industries Forward with Innovation
       </h2>
-      <p className="2xl:text-lg mb-8 text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">
+      <p className="2xl:text-lg mb-8 text-center bg-gradient-to-r from-blue-600 via-teal-500 to-blue-400 bg-clip-text text-transparent font-semibold">
         We blend industry expertise, advanced IT solutions, and powerful AI technologies to help businesses grow, adapt, and stay ahead in an ever-evolving world.
       </p>
       <div ref={sectionRef} className={styles.servicesGrid}>
