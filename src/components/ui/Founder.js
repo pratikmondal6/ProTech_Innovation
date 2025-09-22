@@ -43,6 +43,8 @@ export default function Founder() {
                         {/* Name & Role */}
                         <h3 className={styles.founderName}>{founder.name}</h3>
                         <p className={styles.founderRole}>{founder.role}</p>
+                            {/* Visible badge for demonstration */}
+                            <span style={{display:'inline-block',marginTop:'8px',padding:'4px 12px',background:'linear-gradient(90deg,#2563eb,#7c3aed,#e11d48,#14b8a6)',color:'#fff',borderRadius:'999px',fontSize:'0.85rem',fontWeight:'bold',letterSpacing:'0.5px'}}>Verified Founder</span>
                         {/* Underline animation */}
                         <div className={styles.underline}></div>
                     </div>
