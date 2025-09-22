@@ -1,0 +1,187 @@
+.contactFormWrap form input,
+.contactFormWrap form textarea {
+  border-radius: 0.75rem;
+  border: 1.5px solid #eaf0fb;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  box-shadow: 0 2px 8px rgba(33,25,81,0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contactFormWrap form input:focus,
+.contactFormWrap form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #2563eb33;
+  outline: none;
+}
+.contactFormWrap form label {
+  font-weight: 500;
+  color: #211951;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.contactFormWrap form button[type="submit"] {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(33,25,81,0.10);
+  padding: 0.9rem 2rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contactFormWrap form button[type="submit"]:hover {
+  background: #1746a0;
+}
+/* Vibrant, modern, corporate card styles for contact section */
+.contactSection {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #eaf0fb 0%, #ede9fe 50%, #ffe4ef 100%);
+  overflow: hidden;
+}
+
+.bgBlob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.25;
+  z-index: 0;
+}
+.bgBlob1 {
+  top: -80px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+.bgBlob2 {
+  bottom: -100px;
+  right: -100px;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #e11d48 0%, #7c3aed 100%);
+}
+.bgBlob3 {
+  top: 40%;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #7c3aed 0%, #eaf0fb 100%);
+}
+
+.bgBlob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.25;
+  z-index: 0;
+}
+.bgBlob1 {
+  top: 5%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #2563eb 60%, #7c3aed 100%);
+}
+.bgBlob2 {
+  bottom: 10%;
+  right: 10%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #e11d48 60%, #fbc9be 100%);
+}
+.bgBlob3 {
+  top: 50%;
+  right: 30%;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, #7c3aed 60%, #acaadd 100%);
+}
+
+.contactGrid {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .contactGrid {
+    flex-direction: row;
+  }
+}
+
+.contactCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(33,25,81,0.12);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: 2px solid transparent;
+}
+.contactCard:hover {
+  box-shadow: 0 16px 48px 0 rgba(33,25,81,0.18);
+  border-image: linear-gradient(90deg, #acaadd, #fbc9be, #211951) 1;
+  transform: translateY(-8px) scale(1.03);
+}
+
+.contactTitle {
+  font-weight: bold;
+  color: #211951;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+.contactCard:hover .contactTitle {
+  color: #acaadd;
+}
+
+.contactDescription {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+.contactCard:hover .contactDescription {
+  color: #211951;
+}
+
+.contactLink {
+  font-weight: 600;
+  color: #211951;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  transition: color 0.3s;
+}
+ .contactCard:hover .contactLink {
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #e11d48 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contactFormWrap {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(33,25,81,0.12);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}

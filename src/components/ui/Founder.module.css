@@ -1,0 +1,99 @@
+.foundersList {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.founderCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+
+.founderCard:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 48px rgba(44, 62, 80, 0.18);
+}
+
+.founderImageWrap {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background: #eaf0fb;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founderImage {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.founderCard:hover .founderImage {
+  transform: scale(1.12);
+}
+
+.founderName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #2d3e50;
+  transition: color 0.3s;
+  min-height: 2.2em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.founderCard:hover .founderName {
+  color: #4a90e2;
+}
+
+.founderRole {
+  font-size: 1rem;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+  min-height: 1.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.underline {
+  margin-top: 0.7rem;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #4a90e2 0%, #e91e63 100%);
+  transition: width 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.founderCard:hover .underline {
+  width: 60px;
+}
+
+@media (max-width: 700px) {
+  .foundersList {
+    grid-template-columns: 1fr;
+  }
+  .founderCard {
+    max-width: 90vw;
+  }
+}

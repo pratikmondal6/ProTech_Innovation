@@ -1,0 +1,89 @@
+.founders-section {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  text-align: center;
+}
+
+.founders-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.founders-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.founders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.founder-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  padding: 2rem 1.5rem;
+  width: 260px;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.founder-card:hover {
+  transform: translateY(-18px) scale(1.05);
+  box-shadow: 0 16px 48px rgba(44, 62, 80, 0.18);
+  animation: jump 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes jump {
+  0% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-18px) scale(1.08); }
+  60% { transform: translateY(-10px) scale(1.04); }
+  100% { transform: translateY(-18px) scale(1.05); }
+}
+
+.founder-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background: #eaf0fb;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.founder-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #2d3e50;
+}
+
+.founder-title {
+  font-size: 1rem;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .founders-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder-card {
+    width: 90vw;
+    max-width: 340px;
+  }
+}

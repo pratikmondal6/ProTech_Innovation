@@ -1,0 +1,106 @@
+.milestoneSection {
+  position: relative;
+  width: 100%;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #eaf0fb 0%, #ede9fe 50%, #ffe4ef 100%);
+  overflow: hidden;
+}
+
+.bgBlob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.22;
+  z-index: 0;
+}
+.bgBlob1 {
+  top: -80px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+.bgBlob2 {
+  bottom: -100px;
+  right: -100px;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #e11d48 0%, #7c3aed 100%);
+}
+.bgBlob3 {
+  top: 40%;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #7c3aed 0%, #eaf0fb 100%);
+}
+
+.milestoneGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .milestoneGrid {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+}
+
+.milestoneImageWrap {
+  background: #ede9fe;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(74,144,226,0.12);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.milestoneText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+.milestoneTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #e11d48 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+.milestoneSubtitle {
+  font-size: 1rem;
+  color: #211951;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.milestoneStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+.milestoneStatCard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(74,144,226,0.10);
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.milestoneStatCard:hover {
+  box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+  transform: translateY(-6px) scale(1.04);
+}
